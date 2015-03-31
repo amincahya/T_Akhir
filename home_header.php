@@ -38,7 +38,7 @@
 						
 						
 						<div id='wrapper'>
-							<div id='accountSwitch' class='clearfix'>  
+							<div id='accountSwitch' class='clearfix'>
 							<form method='POST' action='login_1.php'>
 							<div style='width:100%; display:inline; margin:0 5px 0 0;'>
 									<div style='float:left; margin:4px 0 0 0;'>
@@ -47,14 +47,20 @@
 										<span class='smallWhite'><strong>password  </strong></span><span class='smallYellow'><input type='Password' name='password'  maxlength='30'></input></span>
 									&nbsp;
 									</div>
+									
 									<ul style='margin:4px 0 0 5px;'>
 										<li class='partner'>
-											<input type='submit' value='Login'> 
+											<!--<input type='submit' value='Login'> -->
+											<a class='partner'>
+											<input type='image' value='Login'></input>
+											</a>
 										</li>
-									</ul>
+									
+										
 								</div>
-							</form>
+							  </form>
 							</div>
+							</form>
 							<div id='branding'><img src='images/branding.gif' alt='Publisher' /></div>
 							</head>";
 ?>

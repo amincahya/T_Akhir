@@ -45,7 +45,7 @@
 									
 									
 							echo "<span class='smallWhite'>username: </span><span class='smallYellow'>" .$_SESSION['username']. "</span>
-								  <span class='smallWhite'>account id: </span><span class='smallYellow'>00" .$_SESSION['kd_kary']. "</span>
+								  <span class='smallWhite'>account id: </span><span class='smallYellow'>" .$_SESSION['kode']. "</span>
 									&nbsp;
 									</div>
 									<ul style='margin:4px 0 0 5px;'>";
