@@ -1,0 +1,40 @@
+/* CSS Document */
+
+label { font-size: .9em; }
+label.payment_label
+{
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.conWrapper a { text-decoration: underline; }
+
+ul a { text-decoration: none!important; }
+
+p { font-size: .9em; margin: 10px 0 5px 0; } 
+
+.conBody { font-family: Trebuchet MS; }
+.conBody li { font-family: Arial, Helvetica, sans-serif; }
+
+.primaryCard { background: #ffffcc; font-weight: bold; border: 1px solid #cccccc; color: #333333;}
+
+.greenText { color: green; }
+.redText { color: red; }
+
+span.smallWhite { 
+	font-size: .8em;
+	color: #333333;
+	margin-left: 10px;
+}
+
+span.smallYellow {
+	font-size: .8em;
+	color: #3366cc;
+	font-weight: bold;
+}
+
+.blogFeedTitle a { font-size: .9em; color: #3366cc; margin: 0; }
+.blogFeedTitle { margin-top: 10px; }
+.blogFeedDesc { font-size: .85em; margin: 0px;  }
+
+a img { border: none; }

@@ -1,0 +1,70 @@
+div.autocomplete_wrapper
+{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+}
+div.autocomplete_wrapper ul.suggest_options
+{
+    background: none repeat scroll 0 0 #444444;
+    border-width: 0;
+    box-shadow: 0 1px 2px 1px #000000;
+    left: -65px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: auto;
+}
+div.autocomplete_wrapper ul.suggest_options li
+{
+	/* due to overloading issues have to use px not em */
+	font-size: 12px;
+	list-style-type: none;
+	padding: 2px 4px;
+	margin: 4px;
+	background: #888;
+	color: #fff;
+	font-weight: bold;
+}
+
+div.autocomplete_wrapper ul.suggest_options li span.hidden
+{
+	display: none;
+}
+
+div.autocomplete_wrapper ul.suggest_options li span.hilite
+{
+	color: #afa;
+}
+
+div.autocomplete_wrapper ul.suggest_options li.hover
+{
+	background: #ccc;
+	color: #00f;
+	cursor: pointer;
+}
+
+div.autocomplete_wrapper ul.suggest_options li.hover span.hilite
+{
+	color: #3a6;
+}
+
+div.autocomplete_wrapper ul.suggest_options li div
+{
+	background-image: none;
+	font-weight: normal;
+	font-size: .8em;
+	text-align: right;
+	color: #aff;
+	padding: 0px;
+	margin: 2px 0px 0px 0px;
+}
+
+div.autocomplete_wrapper ul.suggest_options li.hover div
+{
+	color: #0aa;
+}

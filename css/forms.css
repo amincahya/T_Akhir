@@ -1,0 +1,140 @@
+/************************ Forms Stylesheet *****************************
+	
+	Website: www.linkworth.com																					
+	Date: 2-26-2007
+	
+************************************************************************/
+
+/****** Fieldsets & Legends ********/
+
+legend { padding: 5px; font-weight: bold; color: #3366cc; font-size: 1em; }
+
+fieldset { 
+	padding: 15px; 
+	display: block;
+	margin: 20px auto; 
+	width: 85%;
+	border: 1px solid #cccccc;
+	background:#FFFFFF url(../images/fieldset-bg-grey.gif) repeat-x;
+}
+
+fieldset label {
+	padding-right: 10px;
+	color: #333333;
+	float: left;
+	text-align: right;
+	width: 40%;
+	margin-top: 3px;
+}
+
+fieldset.yellow { 
+	padding: 15px;
+	display: block;
+	margin: 15px auto;
+	width: 81.6%;
+	border: 2px solid #fff999;
+	background: none; 
+	background-color: #fffccc;
+	text-align: center;
+}
+
+fieldset.yellow label { width: 100%; text-align: center; font-size: .85em!important; }
+
+.fieldsetFooter { text-align: center; border-top: 1px solid #f2f2f2; margin: 5px 0 0 0; padding: 0;}
+.fieldsetFooter input { margin: 15px 0 0 0; }
+
+.fieldsetCentered { text-align: center; }
+.fieldsetCentered  label { float: none; font-size: .95em;}
+.fieldsetCentered .checkBox { margin: 0 0 2px 0 !important; border: none !important; }
+
+fieldset h3 { margin-bottom: 20px; font-size: .85em!important;}
+
+fieldset select { margin-bottom: 10px; }
+
+/****** Labels & Inputs ********/
+ 
+label { margin-right: 5px; color: #333333; }
+
+.textInput:focus, .moneyInput:focus, .tableTextInput:focus { border: 1px solid #3366CC; background: #f1f7ff; }
+
+.textInput, .moneyInput, .tableTextInput { 
+	margin-bottom: 10px; 
+	padding: 3px; 
+	font-size: .85em; 
+	border: 1px solid #999999;
+	width: 150px;
+}
+
+.tableTextInput { margin-bottom: 0; }
+
+.moneyInput { width: 100px; }
+
+.checkBox { margin-top: 5px;}
+
+.submitButton:hover {	cursor: pointer; }
+.submitButton  { 
+	background: url(../images/submit-bg.gif) repeat-x; 
+	border: solid 1px #cccccc;
+	margin: 15px 10px 15px 10px;
+	padding-bottom: 3px; 
+	font-size: .85em;
+	width: 150px;
+	height: 29px;
+	color: #3366CC;		
+	font-weight: bold;
+}
+
+/****** Misc ********/
+
+.formLeft { float: left; width: 50%; }
+.formRight { float: right; width: 50%; }
+
+
+
+/* Link Buttons (used for paypal links */
+a.paypal_button:link,
+a.paypal_button:visited,
+a.paypal_button_cancel:link,
+a.paypal_button_cancel:visited {
+  margin: 2px 5px;
+  padding: 2px 2px 2px 2px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #1ff;
+  border-top: 2px solid #cff;
+  border-left: 2px solid #cff;
+  background: #6ff;
+  color: #006;
+}
+
+a.paypal_button:hover,
+a.paypal_button_cancel:hover {
+  background: #3ff;
+  padding: 3px 1px 1px 3px;
+}
+
+a.paypal_button:active {
+  border: 2px solid #1ff;
+  border-bottom: 2px solid #cff;
+  border-right: 2px solid #cff;
+}
+
+a.paypal_button_cancel:link,
+a.paypal_button_cancel:visited {
+  border: 2px solid #f11;
+  border-top: 2px solid #f99;
+  border-left: 2px solid #f99;
+  background: #f66;
+  color: #000;
+}
+
+a.paypal_button_cancel:hover {
+  background: #f33;
+}
+
+a.paypal_button_cancel:active {
+  border: 2px solid #f99;
+  border-bottom: 2px solid #fcc;
+  border-right: 2px solid #fcc;
+}

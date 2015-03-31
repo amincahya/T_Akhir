@@ -1,0 +1,21 @@
+.stickyfg
+{
+	BACKGROUND-COLOR: #FFF8E9;
+}
+
+.stickybg
+{
+	BACKGROUND-COLOR: #F6BF5B;
+}
+
+.stickyfont
+{
+	COLOR: #000000;
+	FONT-SIZE: 11px;
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+}
+
+#overDiv
+{
+	width: 100px;
+}

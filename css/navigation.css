@@ -1,0 +1,462 @@
+/* LinkWorth Control Center Navigation CSS */
+
+
+/* 1st level NAV LINK STYLES */
+#mainNav li
+{
+	list-style:none;
+	float:left;
+	background:url(../images/navButtons_right.gif) no-repeat right -348px;
+	margin-right:1px;
+}
+#mainNav li a
+{
+	background:url(../images/navButtons_left.gif) no-repeat 0 -348px;
+	display:block;
+	padding:3px 15px;
+	font-size: .9em;
+}
+
+/* ***** BETA TABS ********* */
+
+#mainNav li.shop, #mainNav li.cart 
+{
+	background:url(../images/navButtons_right.gif)  no-repeat scroll right -348px transparent;
+}
+/*#mainNav li.shop a, #mainNav li.cart a
+{
+	background:url(../images/navButtons_left.gif) no-repeat 0 -348px;
+}
+*/
+#mainNav li a:hover
+{
+	color:#3366CC;
+	text-decoration:none;
+}
+#mainNav li.account_manager
+{
+	position: absolute;
+    right: 0;
+}
+
+/* 2nd level NAV LINK STYLES */
+#mainNav ul ul
+{
+	position:absolute;
+	/*left:20px;*/left: 26px;
+	 margin-top: 2px;
+	width:80%;
+}
+#mainNav ul ul li
+{
+	background:none;
+	display:inline;
+}
+#mainNav ul ul a
+{
+	font-size:.85em;
+	padding:2px 6px;
+	background:none;
+	color:#FFFFFF;
+	line-height:2em;
+}
+#mainNav ul ul a:hover
+{
+	text-decoration:underline!important;
+	color:white;
+}
+
+/* 3rd Level NAV LINK STYLES */
+#mainNav ul ul ul
+{
+	width:100%;
+}
+#mainNav ul ul ul li
+{
+	list-style: none;
+	margin-right: 1px;
+	font-size: 1em;
+}
+#mainNav ul ul ul a
+{
+	padding-bottom: 2px;
+	color: #333333!important;
+}
+#mainNav ul ul ul a:hover
+{
+	color: #333333!important;
+	font-weight: normal;
+}
+
+/* Logout Button */
+#mainNav li.logout, #mainNav a.logout
+{
+	background:none;
+	font-size:.90em;
+}
+#mainNav .logout a:hover
+{
+	color:#FF643E;
+}
+
+/* These controls the color of the navigation based on the body id tag */
+body#sites a.sites
+{
+	background:url(../images/navButtons_left.gif) no-repeat 0 0;
+}
+body#sites li.sites
+{
+	background:url(../images/navButtons_right.gif) no-repeat right 0;
+	padding-bottom: 1px;
+}
+body#sites #subNav
+{
+	background: url(../images/subNavBG.gif) repeat-x 0 0;
+}
+body#sites li.sites ul li a.active
+{
+	background: url(../images/subNavBG_highlight.gif) repeat-x 0 1px;
+}
+body#sites li.sites ul ul li a.active
+{
+	background: url(../images/subNav_arrow.gif) no-repeat bottom center;
+}
+/**** Money ****/
+body#money a.money
+{
+	background: url(../images/navButtons_left.gif) no-repeat 0 -58px;
+}
+body#money li.money
+{
+	background: url(../images/navButtons_right.gif) no-repeat right -58px;
+	padding-bottom: 1px;
+}
+body#money #subNav
+{
+	background: url(../images/subNavBG.gif) repeat-x 0 -35px;
+}
+body#money li.money ul li a.active
+{
+	background: url(../images/subNavBG_highlight.gif) repeat-x 0 -34px;
+}
+body#money li.money ul ul li a.active
+{
+	background: url(../images/subNav_arrow.gif) no-repeat bottom center;
+}
+/**** Prt-Account ****/
+body#prt-account a.account
+{
+	background: url(../images/navButtons_left.gif) no-repeat 0 -58px;
+}
+body#prt-account li.account
+{
+	background: url(../images/navButtons_right.gif) no-repeat right -58px;
+	padding-bottom: 1px;
+}
+body#prt-account #subNav
+{
+	background: url(../images/subNavBG.gif) repeat-x 0 -35px;
+}
+body#prt-account li.account ul li a.active
+{
+	background: url(../images/subNavBG_highlight.gif) repeat-x 0 -34px;
+}
+body#prt-account li.account ul ul li a.active
+{
+	background: url(../images/subNav_arrow.gif) no-repeat bottom center;
+}
+/**** Adv-Account ****/
+body#adv-account a.account,
+body#account_manager a.account_manager
+{
+	background: url(../images/navButtons_left.gif) no-repeat 0 -174px;
+}
+body#adv-account li.account,
+body#account_manager li.account_manager
+{
+	background: url(../images/navButtons_right.gif) no-repeat right -174px;
+	padding-bottom: 1px;
+}
+body#adv-account #subNav,
+body#account_manager #subNav
+{
+	background: url(../images/subNavBG.gif) repeat-x 0 -105px;
+}
+body#adv-account li.account ul li a.active
+{
+	background: url(../images/subNavBG_highlight.gif) repeat-x 0 -104px;
+}
+body#adv-account li.account ul ul li a.active
+{
+	background: url(../images/subNav_arrow.gif) no-repeat bottom center;
+}
+/**** Products ****/
+body#products a.products
+{
+	background: url(../images/navButtons_left.gif) no-repeat 0 -232px;
+}
+body#products li.products
+{
+	background: url(../images/navButtons_right.gif) no-repeat right -232px;
+	padding-bottom: 1px;
+}
+body#products #subNav
+{
+	background: url(../images/subNavBG.gif) repeat-x 0 -140px;
+}
+body#products li.products ul li a.active
+{
+	background: url(../images/subNavBG_highlight.gif) repeat-x 0 -139px;
+}
+body#products li.products ul ul li a.active
+{
+	background: url(../images/subNav_arrow.gif) no-repeat bottom center;
+}
+/** New Search Related **/
+body#shop a.shop
+{
+	background: url(../images/navButtons_left4.gif) no-repeat 0 -174px;
+	color: #ffffff;
+}
+body#shop li.shop
+{
+	background: url(../images/navButtons_right4.gif) no-repeat right -174px;
+	padding-bottom: 1px;
+}
+body#shop #subNav
+{
+	background: url(../images/subNavBG.gif) repeat-x 0 -140px;
+}
+body#shop li.shop ul li a.active
+{
+	background: url(../images/subNavBG_highlight.gif) repeat-x 0 -106px;
+}
+/*body#shop li.shop ul ul li a.active
+{
+	background: url(../images/subNav_arrow.gif) no-repeat bottom center;
+}
+*/
+
+/** Cart **/
+body#cart a.cart
+{
+	background: url(../images/navButtons_left2.gif) no-repeat 0 -232px;
+}
+body#cart li.cart
+{
+	background: url(../images/navButtons_right2.gif) no-repeat right -232px;
+	padding-bottom: 1px;
+}
+body#cart #subNav
+{
+	background: url(../images/subNavBG.gif) repeat-x 0 -140px;
+}
+body#cart li.cart ul li a.active
+{
+	background: url(../images/subNavBG_highlight.gif) repeat-x 0 -139px;
+}
+body#cart li.cart ul ul li a.active
+{
+	background: url(../images/subNav_arrow.gif) no-repeat bottom center;
+}
+/** end new search related **/
+/**** Reports ****/
+body#reports a.reports
+{
+	background: url(../images/navButtons_left.gif) no-repeat 0 -116px;
+}
+body#reports li.reports
+{
+	background: url(../images/navButtons_right.gif) no-repeat right -116px;
+	padding-bottom: 1px;
+}
+body#reports #subNav
+{
+	background: url(../images/subNavBG.gif) repeat-x 0 -70px;
+}
+body#reports li.reports ul li a.active
+{
+	background: url(../images/subNavBG_highlight.gif) repeat-x 0 -69px;
+}
+body#reports li.reports ul ul li a.active
+{
+	background: url(../images/subNav_arrow.gif) no-repeat bottom center;
+}
+/**** Tools ****/
+body#tools a.tools
+{
+	background: url(../images/navButtons_left.gif) no-repeat 0 -174px;
+}
+body#tools li.tools
+{
+	background: url(../images/navButtons_right.gif) no-repeat right -174px;
+	padding-bottom: 1px;
+}
+body#tools #subNav
+{
+	background: url(../images/subNavBG.gif) repeat-x 0 -105px;
+}
+body#tools li.tools ul li a.active
+{
+	background: url(../images/subNavBG_highlight.gif) repeat-x 0 -104px;
+}
+body#tools li.tools ul ul li a.active
+{
+	background: url(../images/subNav_arrow.gif) no-repeat bottom center;
+}
+/**** Ads ****/
+body#ads a.ads
+{
+	background: url(../images/navButtons_left.gif) no-repeat 0 -174px;
+}
+body#ads li.ads
+{
+	background: url(../images/navButtons_right.gif) no-repeat right -174px;
+	padding-bottom: 1px;
+}
+body#ads #subNav
+{
+	background: url(../images/subNavBG.gif) repeat-x 0 -105px;
+}
+body#ads li.ads ul li a.active
+{
+	background: url(../images/subNavBG_highlight.gif) repeat-x 0 -104px;
+}
+body#ads li.ads ul ul li a.active
+{
+	background: url(../images/subNav_arrow.gif) no-repeat bottom center;
+}
+/**** Help ****/
+body#help a.help
+{
+	background: url(../images/navButtons_left.gif) no-repeat 0 -290px;
+}
+body#help li.help
+{
+	background: url(../images/navButtons_right.gif) no-repeat right -290px;
+	padding-bottom: 1px;
+}
+body#help #subNav
+{
+	background: url(../images/subNavBG.gif) repeat-x 0 -175px;
+	}
+body#help li.help ul li a.active
+{
+	background: url(../images/subNavBG_highlight.gif) repeat-x 0 -174px;
+}
+body#help li.help ul ul li a.active
+{
+	background: url(../images/subNav_arrow.gif) no-repeat bottom center;
+}
+/**** Affiliate ****/
+body#affiliate a.affiliate
+{
+	background: url(../images/navButtons_left.gif) no-repeat 0 -290px;
+}
+body#affiliate li.affiliate
+{
+	background: url(../images/navButtons_right.gif) no-repeat right -290px;
+	padding-bottom: 1px;
+}
+body#affiliate #subNav
+{
+	background: url(../images/subNavBG.gif) repeat-x 0 -175px;
+}
+body#affiliate li.affiliate ul li a.active
+{
+	background: url(../images/subNavBG_highlight.gif) repeat-x 0 -174px;
+}
+body#affiliate li.affiliate ul ul li a.active
+{
+	background: url(../images/subNav_arrow.gif) no-repeat bottom center;
+}
+
+/* If a top level menu requires white text, this specfies it */ 
+body#adv-account a.account,
+body#products a.products,
+body#help a.help,
+body#affiliate a.affiliate,
+body#tools a.tools
+{
+	color: #FFFFFF;
+}
+body#prt-account a.account,
+body#money a.money,
+body#reports a.reports,
+body#sites a.sites,
+body#ads a.ads
+{
+	color: #333333;
+}
+
+/* These control the account switch advertiser and partner button images */
+body.advertiser #accountSwitch li.partner
+{
+	background: url(../images/switch-tabs-right.gif) right -48px;
+}
+body.advertiser #accountSwitch a.partner
+{
+	background: url(../images/switch-tabs-left.gif) left -48px no-repeat;
+}
+body.advertiser #accountSwitch li.advertiser
+{
+	background: url(../images/switch-tabs-right.gif) top right;
+}
+body.advertiser #accountSwitch a.advertiser
+{
+	background: url(../images/switch-tabs-left.gif) top left no-repeat;
+}
+
+body.partner #accountSwitch li.advertiser
+{
+	background: url(../images/switch-tabs-right.gif) right -100px;
+}
+body.partner #accountSwitch a.advertiser
+{
+	background: url(../images/switch-tabs-left.gif) left -100px  no-repeat;
+	color: #FFFFFF;
+}
+body.partner #accountSwitch li.partner
+{
+	background: url(../images/switch-tabs-right.gif) top right;
+}
+body.partner #accountSwitch a.partner
+{
+	background: url(../images/switch-tabs-left.gif) top left no-repeat;
+}
+
+#accountSwitch
+{
+	text-align: left;
+	position: absolute;
+	right: 0;
+	padding: 0 10px 0 5px ;
+	background: url(../images/switch-corner-left.gif) top left no-repeat;
+	white-space:nowrap;
+}
+
+#accountSwitch a
+{ 
+	color: white; 
+	display: inline-block;
+	font-size: .8em;
+	padding: 3px 15px 3px 15px;
+	margin-bottom: 2px;
+	color: black;
+	outline:0 solid #FFFFFF;
+	
+}
+
+#accountSwitch ul
+{
+	display:inline-block;
+	margin-top:4px;
+}
+
+#accountSwitch li
+{ 
+	display: inline;
+	float: right;
+	margin-left: 1px;
+	text-align: center;
+}

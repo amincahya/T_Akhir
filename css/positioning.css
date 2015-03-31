@@ -1,0 +1,624 @@
+/* CSS Document */
+
+#wrapper
+{
+	width: 100%;
+	min-width: 765px;
+	margin: 0;
+	padding: 0;
+	background:	url(../images/brandingBG.gif) repeat-x top left;
+}
+
+#posworx-wrapper
+{
+	width: 100%;
+	min-width: 765px;
+	margin: 0;
+	padding: 0;
+	background:	url(../images/posworx/background_control_center.jpg) no-repeat top;
+}
+
+#contentWrapper
+{
+	width: 95%;
+	margin: 0 auto;
+	min-width:975px;
+}
+
+#branding
+{
+	height: 96px;
+	padding-left: 30px;
+}
+
+#mainNav
+{
+	height: 24px;
+	position: relative;
+	padding-left: 25px;
+}
+
+#subNav
+{
+	height: 30px;
+}
+
+#subNav2
+{
+	height: 30px;
+	margin-bottom: 30px;
+	margin-top: 1px;
+	background:	url(../images/subNav2_bg.gif);
+}
+
+#subaccounts
+{
+	float: right;
+	margin-top: 4px;
+	margin-right: 10px;
+}
+
+p.footer
+{ 
+	width: 100%; 
+	text-align: center; 
+	font-size: .8em; 
+	margin-top: 20px; 
+}
+
+.clearfix:after
+{
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+
+.clearfix
+{
+	display:inline-block;
+}
+/* Hide from IE Mac \*/
+.clearfix
+{
+	display:block;
+}
+/* End hide from IE Mac */
+
+/********************* Containers *****************/
+
+.conSmall
+{ 
+	width: 49%;
+	margin-top: 0px;
+	background: url(../images/containers/container_br.gif) bottom right no-repeat;
+}
+
+.conFull
+{ 
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	background: url(../images/containers/container_br.gif) bottom right no-repeat;	
+}
+
+div#conMessageCenter,
+div#conQuickTools
+{
+	min-width:470px;
+}
+
+#conMessageCenter 
+{
+	float: right;
+}
+
+#conQuickTools
+{
+	float: left;
+}
+
+.conHead
+{
+	background: url(../images/containers/container_hr.gif) top right no-repeat;
+	height: 34px;
+}
+
+.conBody
+{
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	padding: 15px 15px 5px 15px;
+}
+/*
+	this puts a little padding between the bottom of the main box and the ajax boxes 
+*/
+body#adv-account #mainBox, body#prt-account #mainBox
+{
+	padding-bottom: 25px;
+} 
+
+
+.conBody h3
+{ 
+	text-align: center; 
+	color: #333333; 
+	font-size: 1em; 
+	font-weight: normal; 
+}
+
+.conFoot
+{ 
+	background: url(../images/containers/container_bl.gif) no-repeat bottom left;
+	height: 11px;
+	font-size: 0px;
+}
+
+.conHead h1
+{
+	background: url(../images/containers/container_hl.gif) no-repeat top left;
+	font-size: 1em;
+	color: #333333;
+	height: 34px;
+	padding: 0 0 0 20px;
+	line-height: 32px;
+}
+
+body.advertiser .conBody ul
+{
+	padding-left: 10px;
+	border-bottom: 0px solid #f7695a;
+}
+
+body.partner .conBody ul
+{
+	padding-left:10px;
+	border-bottom: 2px solid #8fc147;
+}
+
+.conBody ul li {
+	float: left;
+	list-style:	none;
+	background:	url(../images/navButtons_right.gif) no-repeat right -348px;
+	margin-right: 1px;
+	font-size: .85em;	 
+}
+
+body.advertiser .conBody ul li.active
+{
+	background-position: right -174px;
+	padding-bottom: 1px;
+}
+
+body.advertiser .conBody ul li.active a, body.advertiser .conBody li.active div
+{
+	background-position:left -174px;
+	color:#000000;
+}
+
+.conBody ul li a, .conBody li div
+{
+	background:	url(../images/navButtons_left.gif) no-repeat 0 -348px; 
+	display: block;
+	padding: 5px 15px;
+	font-size: .95em;
+	cursor: pointer;
+}
+
+.conBody ul li:hover
+{
+	color: #3366cc;
+}
+
+body.partner .conBody ul li.active
+{
+	background-position: right -58px;
+	padding-bottom: 1px;
+}
+
+body.partner .conBody ul li.active a, body.partner .conBody li.active div
+{
+	background-position: left -58px;
+	color: #000000;
+}
+
+.conBody ol
+{
+	margin: 10px 0 0 25px;
+	font-size: .85em;
+}
+
+.conBody ol li
+{
+	border: 1px solid #dddddd;
+	padding: 3px;
+	margin-top: 5px;
+	font-size: .95em;
+	background: #f9f9f9;
+}
+
+.conBody ol li p
+{
+	color: #333333;
+	padding: 3px;
+}
+
+.conBody ol li span
+{
+	font-weight: bold;
+	color: #444444;
+}
+
+.conBody ol li:hover
+{
+	border: 1px solid #FF9933;
+	cursor: pointer;
+}
+
+.conBody ol.instruction_list,
+.conBody ol.instruction_list a
+{
+	font-size: 18px;
+}
+
+.conBody ol.instruction_list li
+{
+	border: 0;
+	background: transparent;
+	cursor: default;
+}
+
+.conBody table
+{
+	margin-top: 0px;
+}
+
+.conLeft
+{
+	width: 100%;
+}
+
+.conSorting
+{
+	border: 1px solid #ff9933;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	background: url(../images/containers/sorting_bg_orange.gif) bottom repeat-x;
+}
+
+.conBody table ul
+{
+	border-bottom:none;
+}
+.conBody table ul li
+{
+	float:none;
+	list-style:circle;
+	background: none;
+	margin-right:20px;
+	font-size:1em;
+}
+
+.acctMngrCntnt {
+   list-style-type: disc;
+   overflow: auto;
+   position: relative;
+   height: 120px;
+   width: 100%;
+}
+
+/************ Table Styling ************/
+
+.sortingTable
+{
+	border-collapse: separate;
+	width: 750px;
+	padding-left: 10px;
+}
+
+.sortingTable td
+{
+	text-align: left;
+	padding: 0px 0px 10px 0px;
+}
+
+.sortingTable label
+{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.sortingTable select
+{
+	border-width: 1px;
+	width: 164px;
+}
+
+table
+{ 
+	width: 100%; 
+	text-align: left;
+	margin-top: 0px;	
+	border-collapse: collapse;
+}
+
+tr.alternate
+{
+	background: #f9f9f9;
+}
+
+td
+{
+	padding: 5px;
+}
+
+th
+{
+	font-size: .85em;
+	color: #333333;
+	background: url(../images/containers/messages_bg.gif) bottom repeat-x;
+	padding: 8px 8px 8px 5px;
+}
+
+td
+{
+	font-size: .8em;
+}
+
+.thBorder
+{
+	border: 1px solid #cccccc;
+}
+
+/************ End Table Styling ********/
+
+select
+{
+	border-width: 1px;
+	font-size: .9em;
+}
+
+#quickStats a
+{
+	text-decoration: underline;
+}
+
+.dataTableFoot
+{
+	text-align: center;
+	margin-top: 15px;
+	border-top: 1px solid #f2f2f2;
+	padding-top: 15px;
+}
+
+.dataTableFoot input
+{
+	margin-right: 50px;
+}
+
+.pageNumbers
+{
+	font-size: .85em;
+}
+
+.yellowBox
+{ 
+	border: 2px solid #fff999; 
+	background-color: #fffccc; 
+	text-align: center; 
+	padding: 0 15px 5px 15px; 
+	width: 85%; 
+	margin: 0 auto; 
+}
+
+.yellowBox a
+{
+	color: #3366CC;
+}
+
+.yellowBox label
+{
+	margin: 10px 10px 0 10px;
+	display: block;
+	float: left;
+}
+
+#pending_deals_msg
+{
+	color: #f00;
+	text-align: center;
+}
+
+#pending_deals_msg a
+{
+	font-size: 1em;
+}
+
+#pending_deals_msg a:hover
+{
+	color: #3366cc;
+}
+
+.nofollow_website
+{
+	border: thin dashed firebrick ! important;
+	background-color: rgb(255, 200, 200) ! important;
+	padding:2px;
+}
+
+.jobOpptAvail
+{
+	background-color: #C9E9C9;
+	margin: 0 auto; 
+}
+
+.jobOpptCondAvail
+{
+	background-color: #FFF5CF;
+	margin: 0 auto; 
+}
+
+.jobOpptNotAvail
+{
+	background-color: #FFCCCC;
+	margin: 0 auto; 
+}
+
+.linkpost_price
+{
+	color: #330066;
+	background-color: #FFFFFF;
+	background-position: center center;
+	border: 1px dotted #999999;
+	padding: 4px;
+}
+
+/*
+| *********************************** |
+|       LinkQuote Tool Styles         |
+| *********************************** |
+*/
+
+div#linkquote_wrapper
+{
+	width: 98%;
+	padding: 10px 0 0 0;
+}
+
+div#tabletop
+{
+	width: 98%;
+	height: 15px;
+	margin-bottom: 10px;
+}
+
+div#linkquote_leftcolumn
+{
+	width: 450px;
+	float: left;
+}
+
+.linkquote_table
+{
+	height: 110px;
+}
+
+div#linkquote_leftcolumn .linkquote_table
+{
+	width: 430px;
+}
+
+div#linkquote_rightcolumn .linkquote_table
+{
+	width: 200px;
+}
+
+.linkquote_table td
+{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.linkquote_header
+{
+	height: 35px;
+}
+
+.linkquote_submit
+{
+	text-align: center;
+}
+
+.linkquote_submit input.submit
+{
+	margin: 0 auto;
+	width: 125px;
+}
+
+.linkquote_prices,
+.website_example
+{
+	height:30px;
+}
+
+div#linkquote_footer
+{
+	width: 650px;
+	clear: both;
+}
+
+div#linkquote_error
+{
+	width: 98%;
+	text-align: center;
+	padding: 5px 10px;
+	margin-bottom: 20px;
+}
+
+/* RESET UL/OL STYLES */
+.conBody ul.default_style,
+.conBody ol.default_style
+{
+	border:0 #000000 solid !important;
+	padding-left:5px;
+	list-style-type:none;
+}
+
+.conBody ol.default_style li,
+.conBody ul.default_style li 
+{
+	padding:0;
+	margin:auto;
+	font-size:10pt;
+	background:inherit;
+	border:0 #000000 solid;
+	list-style-type:inherit;
+}
+
+.conBody ol.default_style li:hover,
+.conBody ul.default_style li:hover 
+{
+	border:none;
+	padding:0;
+	margin:auto;
+	font-size:10pt;
+	background:inherit;
+	color:#000;
+	cursor:auto;
+}
+
+.conBody ul.default_style li a
+{
+	background:inherit;
+	display:inline;
+	padding:0;
+}
+
+.conBody table ul.account_type_list li
+{
+	background:#FFFFFF;
+	white-space:normal;
+}
+/* END RESET */
+
+td.approval_method_faq
+{
+	padding:10px;
+}
+
+td.approval_method_faq h4
+{
+	margin:0 0 5px 0;
+}
+
+td.approval_method_faq p,
+td.approval_method_faq ul
+{
+	margin:0 0 25px 0;
+}
+
+td.approval_method_faq ol
+{
+	margin:0 0 25px 20px;
+}
