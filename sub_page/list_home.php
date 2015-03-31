@@ -1,5 +1,20 @@
 <?php
 
+echo"
+
+<div id='contentWrapper'><!----------Wrapper 2------------------>
+	<div class='conFull clearfix'>
+		<div class='conHead'><h1>Container 1</h1></div>
+		<div class='conBody' id='mainBox' >
+
+		<script type='text/javascript' src='js/prt_account_home.js'></script>
+		<script type='text/javascript' src='js/adv_hyperlink_tooltip.js'></script>
+
+<div class='clearfix'></div>";
+//----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 	include 'connect.php';
 	/* $sql = "SELECT * FROM tb_domain";
 	$result = $conn->query($sql);
@@ -378,7 +393,7 @@ overflow: scroll;
 												  
 												</ul>";
 									
-										}; //end if 2
+										} //end if 2
 				
 			echo "	
 			
@@ -452,7 +467,7 @@ overflow: scroll;
 						
 							echo "0 results";
 						
-						}; //end if 1
+						} //end if 1
 						
 						
 							$conn->close();
@@ -460,11 +475,11 @@ echo"
 </table>
 </div>
 
-";
 
-//actions keterangan
-echo"
-<table class='overtable' cellpadding='0' cellspacing='0'>
+
+<!---actions keterangan---->
+
+	<table class='overtable' cellpadding='0' cellspacing='0'>
 		<tbody><tr class='tabletop header_nowrap'>
 			<td class='centered_cell'>*Actions:</td>
 			<td class='centered_cell'><img src='images/edit_website.gif' title='Edit Website' alt='Edit Website'>&nbsp;Edit Website</td>
@@ -473,8 +488,23 @@ echo"
 		</tr>
 	</tbody></table>";
 
-//
+	
+	
+	
+	
+//------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	echo"
+	  </div>
+								  <div class='conScrollBar'></div>
+						    
 
-
-
+							<script type='text/javascript'>
+							init();
+							</script>
+							<div class='conFoot'></div>	
+              </div>
+			  </div>";
+	
+	
 ?>

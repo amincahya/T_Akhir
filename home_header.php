@@ -43,8 +43,8 @@
 							<div style='width:100%; display:inline; margin:0 5px 0 0;'>
 									<div style='float:left; margin:4px 0 0 0;'>
 										
-										<span class='smallWhite'><strong>username:</strong></span><span class='smallYellow'><input type='text' name='username' maxlength='30'></input></span>
-										<span class='smallWhite'><strong>account id:</strong></span><span class='smallYellow'><input type='text' name='password' maxlength='30'></input></span>
+										<span class='smallWhite'><strong>username  </strong></span><span class='smallYellow'><input type='text' name='username' maxlength='30'></input></span>
+										<span class='smallWhite'><strong>password  </strong></span><span class='smallYellow'><input type='Password' name='password'  maxlength='30'></input></span>
 									&nbsp;
 									</div>
 									<ul style='margin:4px 0 0 5px;'>

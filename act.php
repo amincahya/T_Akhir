@@ -3,26 +3,7 @@
 	<?php 
 		include 'connect.php';
 		include 'header-footer/header.php'; 
-	
-    
-	
-	
-	$pub = $_GET['p'];
-	if($pub=="p_profil"){
-						echo "<body id='prt-account' class='partner'>";
-	}elseif($pub=="p_sites"){
-						echo "<body id='sites' class='partner'>";
-	}elseif($pub=="p_job"){
-						echo "<body id='products' class='partner'>";
-	}elseif($pub=="p_art"){
-						echo "<body id='affiliate' class='partner'>";
-	}elseif($pub=="p_cust"){
-						echo "<body id='reports' class='partner'>";
-	}elseif($pub=="p_report"){
-						echo "<body id='tools' class='partner'>";
-	}else{
-						echo "<body id='prt-account' class='partner'>";
-	};
+		include 'navigasi/nav_control.php';
 	?>
 	
     
@@ -36,7 +17,7 @@
           
 			
 			
-		<div id="contentWrapper">
+		<div id="contentWrapper"><!--------Wrapper 1-------------->
             <link rel='stylesheet' type='text/css' media='all' href='css/overlib.css' />
 
             <script type='text/javascript' src='js/product_offers.js'></script>
@@ -56,43 +37,24 @@
             </script>
 			
 <!-- Start Container 1 -->
-<div id="contentWrapper">
-	<div class="conFull clearfix">
-		<div class="conHead"><h1>Container 1</h1></div>
-		<div class="conBody" id="mainBox" >
 
-		<script type="text/javascript" src="js/prt_account_home.js"></script>
-		<script type="text/javascript" src="js/adv_hyperlink_tooltip.js"></script>
-
-<div class="clearfix">
-
-   
-
-</div>
-
+							<!----------Start Wrapper 2------------------>
 
 								  
 							<!-------------------Isi Tabel Bawah------------------------>
 
 							
-												<?php include 'sub_page/list_home.php'?>;
+												<?php //include 'sub_page/list_home.php'
+												     include ("Trash/form domain.php");
+												?>
 												
 										
 							<!-------------------End Isi Tabel Bawah------------------------>			
 								  
-								  </div>
-								  <div class="conScrollBar"></div>
-						    
-
-							<script type="text/javascript">
-							init();
-							</script>
-							<div class="conFoot"></div>	
-              </div>
-			  </div>
-		</div>
+								<!----------End Wrapper 2------------------>
+		</div> <!-- End Wrapper 1 -->
 												
-	</div><!-- End Wrapper -->
+	</div>
 				
 		
 	</div>	<!-- End Wrapper -->		
