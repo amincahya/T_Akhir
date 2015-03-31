@@ -6,11 +6,13 @@
 	
 	
 	
-	
-	$pub = $_GET['p'];
-	if($_SESSION['nm_bag']=="Publisher")
-	{
-		// Menu Publisher					
+
+$pub = $_GET['p'];
+
+
+if($_SESSION['nm_bag']=="Publisher")
+{
+	// Menu Publisher					
 			
 					
 //------Menu Profil
@@ -103,49 +105,131 @@
 					echo "<li class='account'><a href='act.php?p=p_profil' class='account'>Profil</a>";
 							include 'sub_nav_1.php';		
 				
-		}
+		}// END Publisher
 			
-	// END Publisher
-	}
-	elseif($_SESSION['nm_bag']=="Keuangan")
-	{
-			echo"<div id='mainNav'>
-				<ul>
-                    <li class='account'><a href='index.php' class='account'>Home</a></li>
-					<li class='sites'><a href='advertise.php' class='sites'>Advertise Here</a></li>
-					<li class='products'><a href='contact_us.php' class='products'>Contact Us</a></li>
-					 <li class='logout'><a href='logout.php' class='logout'>logout</a></li>
-			   </ul>
-			</div>
-			";
-	}
-	elseif($_SESSION['nm_bag']=="Writer")
-	{
-	
-	
-	
 	
 	}
-	elseif($_SESSION['nm_bag']=="Customer")
-	{
-	
-	
-	
-	
-	
-	
-	}
-	elseif($_SESSION['nm_bag']=="Admin")
-	{
-	
-	
-	
-	
-	
-	}
-	
-	
-	
+elseif($_SESSION['nm_bag']=="Keuangan")
+{
+								
+					
+//------Menu Profil
+		if($pub=="p_profil" 
+			OR $pub=="p_profil_team_info"
+			OR $pub=="p_profil_manage_team" 
+			OR $pub=="p_profil_publisher_payout")
+		{
+			
+				echo   "<li class='account'><a href='act.php?p=p_profil' class='account'>Profil</a>";
+						include 'sub_nav_1.php';
+				
+		}
+
+		
+
+		
+//-------Menu Job		
+		elseif($pub=="p_art"
+			OR $pub=="p_art_job_articles"
+			OR $pub=="p_art_articles_pending" 
+			OR $pub=="p_art_articles_done"
+			OR $pub=="p_art_articles_payment")
+		{		
+				
+					echo "<li class='account'><a href='act.php?p=p_profil' class='account'>Profil</a></li>
+						  <li class='affiliate'><a href='act.php?p=p_art' class='affiliate'>Articles</a>";
+					include 'sub_nav_1.php';
+				
+		}
+		
+		
+		elseif($pub=="p_report"
+			OR $pub=="p_report_job_payout"
+			OR $pub=="p_report_report")
+		{		
+				
+					echo "<li class='account'><a href='act.php?p=p_profil' class='account'>Profil</a></li>
+						  <li class='affiliate'><a href='act.php?p=p_art' class='affiliate'>Articles</a></li>
+						  <li class='tools'><a href='act.php?p=p_report' class='tools'>Report</a>";
+					include 'sub_nav_1.php';
+							
+		}	
+		else
+		{		
+				
+					echo "<li class='account'><a href='act.php?p=p_profil' class='account'>Profil</a>";
+							include 'sub_nav_1.php';		
+				
+		}// END Publisher
+			
+			
+			
+		
+}
+elseif($_SESSION['nm_bag']=="Writer")
+{
+					
+//------Menu Profil
+		if($pub=="p_profil" 
+			OR $pub=="p_profil_team_info"
+			OR $pub=="p_profil_manage_team" 
+			OR $pub=="p_profil_publisher_payout")
+		{
+			
+				echo   "<li class='account'><a href='act.php?p=p_profil' class='account'>Profil</a>";
+						include 'sub_nav_1.php';
+				
+		}
+
+		
+
+		
+//-------Menu Job		
+		elseif($pub=="p_art"
+			OR $pub=="p_art_job_articles"
+			OR $pub=="p_art_articles_pending" 
+			OR $pub=="p_art_articles_done"
+			OR $pub=="p_art_articles_payment")
+		{		
+				
+					echo "<li class='account'><a href='act.php?p=p_profil' class='account'>Profil</a></li>
+						  <li class='affiliate'><a href='act.php?p=p_art' class='affiliate'>Articles</a>";
+					include 'sub_nav_1.php';
+				
+		}
+		
+			
+		else
+		{		
+				
+					echo "<li class='account'><a href='act.php?p=p_profil' class='account'>Profil</a>";
+							include 'sub_nav_1.php';		
+				
+		}// END Publisher
+
+
+
+}
+elseif($_SESSION['nm_bag']=="Customer")
+{
+
+
+
+
+
+
+}
+elseif($_SESSION['nm_bag']=="Admin")
+{
+
+
+
+
+
+}
+
+
+
 	
 	
 	
