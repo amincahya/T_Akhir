@@ -39,7 +39,7 @@
 						
 						<div id='wrapper'>
 							<div id='accountSwitch' class='clearfix'>
-							<form method='POST' action='login_1.php'>
+							<form method='POST' action='login.php'>
 							<div style='width:100%; display:inline; margin:0 5px 0 0;'>
 									<div style='float:left; margin:4px 0 0 0;'>
 										
@@ -50,10 +50,7 @@
 									
 									<ul style='margin:4px 0 0 5px;'>
 										<li class='partner'>
-											<!--<input type='submit' value='Login'> -->
-											<a class='partner'>
-											<input type='image' value='Login'></input>
-											</a>
+											<a class='partner'><input type='image' value='Login'></input></a>
 										</li>
 									
 										
