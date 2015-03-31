@@ -419,7 +419,71 @@ elseif($_SESSION['nm_bag']=="Writer")
 elseif($_SESSION['nm_bag']=="Customer")
 {
 
+	if($pub=="p_cust"
+		OR $pub=="p_cust_manage_customer")
+	{
+				$a=0;
+				if($pub=="p_cust_manage_customer"){$a='active';}
+				elseif($pub=="p_cust"){$a='active';}
+//--------------Menu Customer
+	
+				echo "<ul>
+							
+                            <li><a href='act.php?p=p_cust_manage_customer' class='".$a."'>Manage Customer</a></li>
+                       </ul>";
+				echo "</li>
+							
+							<li class='logout'><a href='logout.php' class='logout'>logout</a>
+					</li>";
+	}
+	
+//-------------Start Menu Job	
+	elseif($pub=="p_order"
+			OR $pub=="p_order_new_job"
+			OR $pub=="p_order_pending_publish" 
+			OR $pub=="p_order_job_done"
+			OR $pub=="p_order_payment")
+		{
+					$a=0;$b=0;$c=0;$d=0;
+					if($pub=="p_order_new_job"){$a='active';}
+					elseif($pub=="p_order_pending_publish"){$b='active';}
+					elseif($pub=="p_order_job_done"){$c='active';}
+					elseif($pub=="p_order_payment"){$d='active';}
+					elseif($pub=="p_order"){$a='active';}
+//--------------Menu Job				
+			
+				  echo "<ul>
+                            <li><a href='act.php?p=p_order_new_job' class='".$a."'>New Order</a></li>
+                            <li><a href='act.php?p=p_order_pending_publish' class='".$b."'>Pending Publish</a></li>
+                            <li><a href='act.php?p=p_order_job_done' class='".$c."'>Order Done</a></li>
+                            <li><a href='act.php?p=p_order_payment' class='".$d."'>Payment</a></li>
+                            
+                       </ul>";
+					
+			echo "</li>
+				    <li class='reports'><a href='act.php?p=p_cust' class='reports'>Customer</a></li>
+				  <li class='logout'><a href='logout.php' class='logout'>logout</a></li>";
+	}	
+//---------End Menu Job
+	
+//---------End Menu Customer
 
+
+
+	else
+	{
+				echo "<ul>
+                           <li><a href='act.php?p=p_cust_manage_customer' class='active'>Manage Customer</a></li>
+							
+                       </ul>
+						</li>
+				      <li class='logout'><a href='logout.php' class='logout'>logout</a></li>";
+			
+	}
+	
+	
+	
+// END Publisher
 
 
 

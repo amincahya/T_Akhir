@@ -213,7 +213,35 @@ elseif($_SESSION['nm_bag']=="Writer")
 elseif($_SESSION['nm_bag']=="Customer")
 {
 
-
+				
+//------Menu Profil
+		if($pub=="p_cust"
+			OR $pub=="p_cust_manage_customer")
+		{	
+					echo "
+						  <li class='affiliate'><a href='act.php?p=p_order' class='affiliate'>Order Job</a></li>
+					      <li class='reports'><a href='act.php?p=p_cust' class='reports'>Customer</a>";
+						include 'sub_nav_1.php';
+					
+		}
+		
+		elseif($pub=="p_order"
+			OR $pub=="p_order_new_job"
+			OR $pub=="p_order_pending_publish" 
+			OR $pub=="p_order_job_done"
+			OR $pub=="p_order_payment")
+		{		
+			
+				echo "<li class='affiliate'><a href='act.php?p=p_order' class='affiliate'>Order Job</a>";
+						include 'sub_nav_1.php';
+				
+		}
+		else
+		{		
+				
+					include 'sub_nav_1.php'	;	
+				
+		}// END Publisher
 
 
 
