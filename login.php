@@ -45,11 +45,11 @@
 				$_SESSION['username']=$hasilxz[1];
 				$_SESSION['nm_bag']=$hasilxz[2];
 				
-				if($_SESSION['nm_bag']=="Customer"){header("location:act.php?p=p_cust");}
+				if($_SESSION['nm_bag']=="Customer"){header("location:act.php?p=p_order");}
 				else{header("location:act.php?p=p_profil");}
 				
 			
 			
 		 
-		}/* else{header("location:index.php");} */
+		}else{header("location:index.php");} 
 ?>

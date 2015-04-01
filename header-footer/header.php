@@ -49,9 +49,10 @@
 									&nbsp;
 									</div>
 									<ul style='margin:4px 0 0 5px;'>";
-																																	
-												echo"<li class='partner'><a href='#' class='partner'>" .$_SESSION['nm_bag']. "</a></li>";										
-									
+												if($_SESSION['nm_bag']=="Customer"){																					
+												echo"<li class='partner'><a href='act.php?p=p_cust' class='partner'>" .$_SESSION['nm_bag']. "</a></li>";										
+												}else{echo"<li class='partner'><a href='act.php?p=p_profil' class='partner'>" .$_SESSION['nm_bag']. "</a></li>";}
+												
 							echo"								
 									</ul>
 								</div>

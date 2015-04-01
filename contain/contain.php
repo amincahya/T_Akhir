@@ -12,7 +12,7 @@ echo"
 <div class='clearfix'></div>";
 //----------------------------------------------------------------------------------------------------------------------------------------
 
-
+ error_reporting(0);
 
 
 
@@ -23,38 +23,60 @@ echo"
 
 
 	$pub = $_GET['p'];
-	if($pub=="p_profil"){echo"0"; 
-	}elseif($pub=="p_profil_team_info"){echo"1";
+	if($pub=="p_profil" 
+		OR $pub=="p_profil_team_info"){echo"1";
 	}elseif($pub=="p_profil_manage_team"){ echo"2";
 	}elseif($pub=="p_profil_publisher_payout"){echo"3";
-	}elseif($pub=="p_sites"){echo"4";
-	}elseif($pub=="p_sites_manage_site"){echo"6";
-	}elseif($pub=="p_sites_manage_niche"){echo"7"; 
-	}elseif($pub=="p_sites_manage_category"){echo"8";
-	}elseif($pub=="p_job"){echo"9";
-	}elseif($pub=="p_job_new_job"){echo"10";
-	}elseif($pub=="p_job_pending_publish"){echo"11";
-	}elseif($pub=="p_job_job_done"){echo"12";
-	}elseif($pub=="p_job_manage_job"){echo"13";
-			
-	}elseif($pub=="p_art"){echo"14";
-	}elseif($pub=="p_art_job_articles"){echo"15";
-	}elseif($pub=="p_art_articles_pending"){echo"16";
-	}elseif($pub=="p_art_articles_done"){echo"17";
-	}elseif($pub=="p_art_articles_payment"){echo"18";
-	}elseif($pub=="p_cust"){echo"19";
-	}elseif($pub=="p_cust_manage_customer"){echo"19";
 	
-	}elseif($pub=="p_report"){echo"20";
-	}elseif($pub=="p_report_job_payout"){echo"21";
-	}elseif($pub=="p_report_report"){echo"22";
+	
+	
+	}elseif($pub=="p_sites" 
+		OR $pub=="p_sites_manage_site")
+	{
+		
+						//
+					If ($_POST['dom_nm']!=''){include 'contain/p_sites_manage_site_detail.php';
+					}elseif($_POST['dom_nm']=='' Or $_POST['url']==''){include 'contain/p_sites_manage_site.php';}
+					
+											
+	}elseif($pub=="p_sites_manage_niche"){echo"5";
+	}elseif($pub=="p_sites_manage_category"){echo"6";
+	
+	
+	
+	}elseif($pub=="p_job" 
+		OR $pub=="p_job_new_job"){echo"7";
+	}elseif($pub=="p_job_pending_publish"){echo"8";
+	}elseif($pub=="p_job_job_done"){echo"9";
+	}elseif($pub=="p_job_manage_job"){echo"10";
+			
+			
+			
+	}elseif($pub=="p_art" 
+		OR $pub=="p_art_job_articles"){echo"11";
+	}elseif($pub=="p_art_articles_pending"){echo"12";
+	}elseif($pub=="p_art_articles_done"){echo"13";
+	}elseif($pub=="p_art_articles_payment"){echo"14";
+	
+	
+	
+	}elseif($pub=="p_cust"){echo"15";
+	}elseif($pub=="p_cust_manage_customer"){echo"16";
+	
+	
+	
+	}elseif($pub=="p_report"
+		OR $pub=="p_report_job_payout"){echo"17";
+	}elseif($pub=="p_report_report"){echo"18";
+				
+				
 				
 //--Khusus Customer				
-	}elseif($pub=="p_order"){echo"23";
-	}elseif($pub=="p_order_new_job"){echo"24";
-	}elseif($pub=="p_order_pending_publish" ){echo"25";
-	}elseif($pub=="p_order_job_done"){echo"26";
-	}elseif($pub=="p_order_payment"){echo"27";	
+	}elseif($pub=="p_order"
+			OR $pub=="p_order_new_job"){echo"19";
+	}elseif($pub=="p_order_pending_publish" ){echo"20";
+	}elseif($pub=="p_order_job_done"){echo"21";
+	}elseif($pub=="p_order_payment"){echo"23";	
 //-----------------		
 	
 	

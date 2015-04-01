@@ -3,6 +3,7 @@
 	<?php 
 		include 'connect.php';
 		include 'header-footer/header.php'; 
+			
 		include 'navigasi/nav_control.php';
 	?>
 	
@@ -67,5 +68,9 @@
 
 
 <!----------------FOOTER----------------------------->
-<?php include "header-footer/footer.php"; ?>
+<?php 
+		include "header-footer/footer.php";
+		
+ ?>
+
 </html>

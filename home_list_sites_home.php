@@ -1,15 +1,10 @@
-<!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
-	<?php 
-				
-		include 'connect.php';
-		include 'home_header.php'; 
+	
+<?php    
+	include 'connect.php';
+	include 'home_header.php'; 
 	?>
-    
-	
-	
-	
-    <body id="products" class="partner">
+    <body id="prt-account" class="partner">
 			<!----Start Menu----->
             <div id="mainNav">
 				<ul>
@@ -40,7 +35,7 @@
 <!-- Start Container 1 -->
 <div id="contentWrapper">
 	<div class="conFull clearfix">
-		<div class="conHead"><h1>Contact Us</h1></div>
+		<div class="conHead"><h1>List Sites</h1></div>
 		<div class="conBody" id="mainBox" >
 
 		<script type="text/javascript" src="js/prt_account_home.js"></script>
@@ -56,7 +51,7 @@
 								  
 							<!-------------------Isi Tabel Bawah------------------------>
 											
-													<?php include 'home_list_sites_contact.php'; ?>	
+													<?php include 'home_list_sites.php'; ?>	
 											
 										
 							<!-------------------End Isi Tabel Bawah------------------------>			
@@ -86,5 +81,7 @@
 
 
 <!----------------FOOTER----------------------------->
-<?php include "footer.php"; ?>
+<?php 
+		include "header-footer/footer.php"; 
+?>		
 </html>
