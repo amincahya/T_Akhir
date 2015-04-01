@@ -1,9 +1,73 @@
-<?php
-		
-						 
+	<?php
+echo"
+
+<div id='contentWrapper'><!----------Wrapper 2------------------>
+	<div class='conFull clearfix'>
+		<div class='conHead'><h1>Container 1</h1></div>
+		<div class='conBody' id='mainBox' >
+
+		<script type='text/javascript' src='js/prt_account_home.js'></script>
+		<script type='text/javascript' src='js/adv_hyperlink_tooltip.js'></script>
+
+<div class='clearfix'></div>";
+//----------------------------------------------------------------------------------------------------------------------------------------
 
 
-$pub = $_GET['p'];
+
+
+
+
+
+//---Container Dimulai
+
+
+
+	$pub = $_GET['p'];
+	if($pub=="p_profil"){echo"0"; 
+	}elseif($pub=="p_profil_team_info"){echo"1";
+	}elseif($pub=="p_profil_manage_team"){ echo"2";
+	}elseif($pub=="p_profil_publisher_payout"){echo"3";
+	}elseif($pub=="p_sites"){echo"4";
+	}elseif($pub=="p_sites_manage_site"){echo"6";
+	}elseif($pub=="p_sites_manage_niche"){echo"7"; 
+	}elseif($pub=="p_sites_manage_category"){echo"8";
+	}elseif($pub=="p_job"){echo"9";
+	}elseif($pub=="p_job_new_job"){echo"10";
+	}elseif($pub=="p_job_pending_publish"){echo"11";
+	}elseif($pub=="p_job_job_done"){echo"12";
+	}elseif($pub=="p_job_manage_job"){echo"13";
+			
+	}elseif($pub=="p_art"){echo"14";
+	}elseif($pub=="p_art_job_articles"){echo"15";
+	}elseif($pub=="p_art_articles_pending"){echo"16";
+	}elseif($pub=="p_art_articles_done"){echo"17";
+	}elseif($pub=="p_art_articles_payment"){echo"18";
+	}elseif($pub=="p_cust"){echo"19";
+	}elseif($pub=="p_cust_manage_customer"){echo"19";
+	
+	}elseif($pub=="p_report"){echo"20";
+	}elseif($pub=="p_report_job_payout"){echo"21";
+	}elseif($pub=="p_report_report"){echo"22";
+				
+//--Khusus Customer				
+	}elseif($pub=="p_order"){echo"23";
+	}elseif($pub=="p_order_new_job"){echo"24";
+	}elseif($pub=="p_order_pending_publish" ){echo"25";
+	}elseif($pub=="p_order_job_done"){echo"26";
+	}elseif($pub=="p_order_payment"){echo"27";	
+//-----------------		
+	
+	
+	}else{
+			if($_SESSION['nm_bag']=="Customer"){echo"Customer";}
+			else{echo"Other";}
+								
+	};
+	
+	
+/* 	
+	
+	$pub = $_GET['p'];
 if($_SESSION['nm_bag']=="Publisher")
 {
 // Sub Menu Publisher					
@@ -352,6 +416,7 @@ elseif($_SESSION['nm_bag']=="Writer")
 					   
 				echo  "</li>
 						<li class='affiliate'><a href='act.php?p=p_art' class='affiliate'>Articles</a></li>
+						<li class='tools'><a href='act.php?p=p_report' class='tools'>Report</a></li>
 						<li class='logout'><a href='logout.php' class='logout'>logout</a></li>";
 				
 					
@@ -385,6 +450,7 @@ elseif($_SESSION['nm_bag']=="Writer")
                        </ul>";
 					   
 				echo "</li>
+					  <li class='tools'><a href='act.php?p=p_report' class='tools'>Report</a></li>
 					  <li class='logout'><a href='logout.php' class='logout'>logout</a>
 					  </li>";
 			
@@ -489,17 +555,37 @@ elseif($_SESSION['nm_bag']=="Customer")
 }
 elseif($_SESSION['nm_bag']=="Admin")
 {
-
-
-
-
-
-}
-						 
-						 
-						 
-						 
-						 
-						 
-
-?>
+	
+	
+}	
+	
+	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	echo"
+	  </div>
+								  <div class='conScrollBar'></div>
+				
+							<script type='text/javascript'>
+							init();
+							</script>
+							<div class='conFoot'></div>	
+              </div>
+			  </div>";
+		?>

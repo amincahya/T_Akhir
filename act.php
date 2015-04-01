@@ -44,8 +44,9 @@
 							<!-------------------Isi Tabel Bawah------------------------>
 
 							
-												<?php //include 'sub_page/list_home.php'
-												     include ("Trash/form domain.php");
+												<?php //include 'sub_page/list_home.php';
+												      //include ("Trash/form domain.php");
+													  include 'contain/contain.php';
 												?>
 												
 										
